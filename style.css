@@ -7,36 +7,27 @@ body {
 }
 
 h1 {
-    /* Font stack with fallbacks */
-    font-family: 'Shizuru', 'Brush Script MT', cursive, sans-serif;
-    
-    /* Gradient text with better browser support */
-    background: linear-gradient(to right,
-    #f2c2ff,  /* Pale lilac */
-    #ffb3d9,  /* Cotton candy */
-    #ff8fab,  /* Coral */
-    #ffb347,  /* Golden hour */
-    #ffd700   /* Gold */
-);
-    background-clip: text;
+    /* Ultra-clean Gen Z font stack */
+    font-family: 'Bebas Neue', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 800; /* Super bold */
+    letter-spacing: 1px; /* Trendy spaced-out letters */
+    text-transform: uppercase; /* Modern caps style */
+    line-height: 1; /* Tight line spacing */
+
+    /* Keep your existing gradient */
+    background: linear-gradient(to right, #ff6b9d, #ff8a5c, #ffd166, #06d6a0, #118ab2);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    color: #ff6b9d; /* Fallback color */
     
+    /* Subtle depth */
     text-shadow: 
-    1px 1px 3px rgba(0,0,0,0.2),
-    -1px -1px 3px rgba(255,255,255,0.2);
+        1px 1px 1px rgba(0,0,0,0.1), /* Soft drop shadow */
+        0 0 10px rgba(255,255,255,0.3); /* Glow effect */
     
-    /* Animation */
-    background-size: 400% auto;
-    animation: rainbow 8s linear infinite;
-    
-    /* Ensure proper sizing */
-    display: inline-block; /* Needed for gradient text */
-    font-size: 8rem;
+    /* Layout polish */
     margin: 0.5em 0;
+    display: inline-block;
 }
 
 @keyframes rainbow {
